@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:localpages ="clr-namespace:TravelRecordApp" 
+             x:Class="TravelRecordApp.HomePage">
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem  Text="+" x:Name="btn_toolbar_Add" Clicked="btn_toolbar_Add_Clicked"/>
+
+    </TabbedPage.ToolbarItems>
+
+    <localpages:HistoryPage Title="History"/>
+    <localpages:MapPage Title="Map"/>
+    <localpages:ProfilePage Title="Profile"/>
+</TabbedPage>

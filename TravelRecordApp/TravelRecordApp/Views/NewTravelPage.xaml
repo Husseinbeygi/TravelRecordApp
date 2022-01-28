@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TravelRecordApp.NewTravelPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="Save" Text="Save" Clicked="Save_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    
+    <ContentPage.Content>
+        <StackLayout Margin="16" VerticalOptions="StartAndExpand">
+            <Entry x:Name="Exp_ent" Placeholder="Write Your Experence"/>
+            <ListView x:Name="VenuesList"
+                      HorizontalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding name}"/>
+                            <Label Grid.Column="1"  Text="{Binding distance, StringFormat='{0} Meter'}"/>
+                            <Label Grid.Row="1" Text="{Binding location.address}" TextColor="DodgerBlue"/>
+
+
+                        </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+    
+
+</ContentPage>

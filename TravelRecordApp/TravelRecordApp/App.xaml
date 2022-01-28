@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TravelRecordApp.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#0D6EFD</Color>
+            <Color x:Key="Success">#198754</Color>
+            <Color x:Key="Info">#0DCAF0</Color>
+            <Color x:Key="Warning">#FFC107</Color>
+            <Color x:Key="Danger">#DC3545</Color>
+            <Color x:Key="Light">#F8F9FA</Color>
+            <Color x:Key="Dark">#212529</Color>
+
+        </ResourceDictionary>
+        
+    </Application.Resources>
+</Application>
